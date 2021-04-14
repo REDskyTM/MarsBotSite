@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD HTML 4.01 Transitional//RU">
+<html>
+<head>
+<header>
+    <h1>MarsBot</h1>
+    <nav><a>Сделай</a><a>Свой</a><a>Сервер!</a></nav>
+</header>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MarsBot Discord</title>
+<bgsound src="music.mp3" loop="1" volume="100" balance="10" />
+<style>
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
+* { padding: 0; margin: 0; }
+body { background-image: url('marsi.jpg'); background-size: cover; font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 1px;}
+ 
+header {
+    text-align: justify;
+    height: 3em;
+    padding: 2em 5%;
+    background: #4c4c4c;
+    color: #fff;
+}
+ 
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+ 
+header > div,
+header > div::before,
+header nav,
+header > div h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+ 
+header > div {
+    height: 100%;
+}
+ 
+header > div::before {
+    content: '';
+    height: 100%;
+}
+ 
+header > div h1 {
+    font-size: 4em;
+    font-style: italic;
+}
+ 
+header nav a {
+    padding: 0 0.6em;
+    white-space: nowrap;
+}
+ 
+header nav a:last-child {
+    padding-right: 0;
+}
+ 
+@media screen and (max-width: 120px){
+     
+    header {
+        height: auto;
+    }
+     
+    header > div,
+    header > div h1,
+    header nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+     
+}
+body {
+ }
+.sliding-button {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding: 30px 30px;
+  border: 5px solid;
+  border-image: linear-gradient(180deg, #ff8955, #ff6915, #ff5f2b, #ff5f4b);
+  border-image-slice: 1;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  left: 100;
+  top: 0;
+  height: 0;
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #ff8955, #ff6915, #ff5f2b, #ff5f4b);
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.sliding-button:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+</style>
+</head>
+<body>
+
+<a href="https://discord.com/api/oauth2/authorize?client_id=825086327279714304&permissions=8&scope=bot" class="sliding-button">Пригласить</a>
+<a href="https://discord.gg/Zh5xHJuStt"class="sliding-button">Сервер поддержки</a>
+    
+</body>
+</html>
